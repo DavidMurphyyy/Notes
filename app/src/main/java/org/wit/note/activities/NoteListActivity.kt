@@ -18,11 +18,11 @@ class NoteListActivity : AppCompatActivity(), NoteListener {
   lateinit var app: MainApp
 
   override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_note_list)
-    app = application as MainApp
-    toolbar.title = title
-    setSupportActionBar(toolbar)
+      super.onCreate(savedInstanceState)
+      setContentView(R.layout.activity_note_list)
+      app = application as MainApp
+      toolbar.title = title
+      setSupportActionBar(toolbar)
 
     val layoutManager = LinearLayoutManager(this)
     recyclerView.layoutManager = layoutManager
